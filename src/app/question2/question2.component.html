@@ -1,0 +1,17 @@
+<h4>
+  {{title}}
+</h4>
+
+<p>
+Do you want to convert from:
+<input #celsiusToFahrenheit  (click)="tempChoice(celsiusToFahrenheit.value)" name="options" type="radio" value="celsiusToFahrenheit">Celsius To Fahrenheit<!-- Radio button to convert Cel to Far -->
+<input #fahrenheitToCelcius  (click)="tempChoice(fahrenheitToCelcius.value)" name="options" type="radio" value="fahrenheitToCelcius">Fahrenheit To Celcius<!-- Radio Button to convert Far to Cel-->
+</p>
+
+<p>
+  Please enter degrees in {{convertedTempFrom}} and click enter:<input #temp (keyup.enter)=convertTemp(temp.value)><!-- User input for conversion of temperature-->
+</p>
+
+<h3>
+Degrees in {{convertedTempTo}} is {{convertedTemp}}<!-- Converted temp dispalyed using variables from component.ts file -->
+</h3>

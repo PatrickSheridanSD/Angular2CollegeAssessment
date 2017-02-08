@@ -1,0 +1,36 @@
+<h4>
+  {{title}}
+</h4>
+
+<p>
+Enter distance 1:<input #distanceOne><!--User input for distance 1 -->
+</p>
+
+<p>
+Enter distance 2:<input #distanceTwo><!--User input for distance 2 -->
+</p>
+
+<p>
+Enter distance 3:<input #distanceThree><!-- User input for distance 3 -->
+</p>
+
+<p>
+<button (click)="calculateDistance(distanceOne.value, distanceTwo.value, distanceThree.value)">Calculate Distance!</button><!--Button to pass distance values into calculateDistance method -->
+</p>
+
+<h4>Total distance is: {{result}}</h4><!-- Dispaly Total distance-->
+
+<p>
+<input #adultFare (click)="setFare(adultFare.value)" name="options" type="radio" value="adultFare">Adult<!-- Adult choice radio button -->
+<input #childFare (click)="setFare(childFare.value)" name="options" type="radio" value="childFare">Child<!-- Child choice radio button-->
+</p>
+
+<p>
+<button (click)="calculateFare()">Calculate Fare!</button><!-- button that calls calculateFare method -->
+</p>
+
+<h3>
+Total fare for your journey is: {{resultFare}}
+</h3>
+
+

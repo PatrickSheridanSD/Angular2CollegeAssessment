@@ -1,0 +1,27 @@
+<h4>
+  {{title}}
+</h4>
+
+<p> 
+Enter Your height in meters <input #height><!-- Enter height input -->
+</p>
+
+<p> 
+Enter Your weight in kilograms <input #weight><!--Enter weight input -->
+</p>
+
+<p>
+<button (click)="calculateBMI(height.value, weight.value)">Calculate BMI!</button><!-- button with calculate BMI method -->
+</p>
+
+<p>
+{{message1}}<!--Display message 1 -->
+</p>
+
+<p>
+{{message2}}<!--Display Message 2 -->
+</p>
+
+<h3>
+{{message3}}<!--Display message 3 -->
+</h3>
